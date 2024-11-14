@@ -4,4 +4,19 @@ myvals = [{"repo_name":"json-practice", "repo_url":"https://github.com/nmagee/js
 
 # taking an array and dumping it into json by using the json.dumps command
 myjson = json.dumps(myvals)
-print(myjson)
+
+first = ('sape', 4139)
+second = ('guido', 4127)
+third = ('jack', 4098)
+
+# combine tuples into list. Can .append one by one or .extend all at once
+mylist = []
+mylist.extend((first, second, third))
+
+# convert to dict
+mydict = dict(mylist)
+mydict
+
+# convert to JSON
+myjson = json.dumps(mydict)
+myjson
